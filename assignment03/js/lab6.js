@@ -15,21 +15,25 @@ do {
 
 do {
   rate = parseFloat(prompt("Enter rate of interest per annum in %"));
-  if (rate < 0 && rate > 10) {
-    alert("Rate should be between 0 and 10");
-    continue;
-  } else {
+  if (rate >=1 && rate <= 10) {
     break;
   }
-} while (rate > 0 && rate <= 10);
+    else{
+    alert("Rate should be between 1 and 10");
+    
+  } 
+    
+  }
+ while (true);
 
 do {
   years = parseFloat(prompt("Enter number of years"));
-  if (years > 0 && years < 30) {
+  if (years >= 1 && years <= 30) {
     break;
-  } else alert("Years should be between 1 and 29");
-  //  continue;
-} while (years > 0 && years < 30);
+  } else {
+  alert("Years should be between 1 and 30");
+  }//  continue;
+} while (true);
 
 futureValue = investment;
 for (let i = 0; i < years; i++) {
