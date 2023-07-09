@@ -3,14 +3,6 @@ let rate;
 let years = 0;
 let futureValue;
 
-// do {
-//   investment = parseFloat(prompt("Enter amount as XXXX.xx"));
-//   alert("Investment should be a number");
-
-// } while (isNaN(investment));
-
-// rate = parseFloat(prompt("Enter rate of interest per annum in %"));
-
 do {
   investment = parseFloat(prompt("Enter amount as XXXX.xx"));
   if (!isNaN(investment)) {
