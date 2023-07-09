@@ -3,11 +3,11 @@ let gallons;
 let mps;
 let again = "y";
 do {
-  miles = parseFloat(prompt("enter miles"));
+  miles = parseFloat(prompt("Enter miles"));
   gallons = parseFloat(prompt("Enter gallons"));
   if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0) {
     mps = miles / gallons;
-    alert(mps);
+    alert(mps.toFixed());
   } else {
     window.alert("One of both entries are invalid");
   }
